@@ -31,7 +31,7 @@
   <!-- WARNING:  Do not configure application-specific resources here!      -->
   <!-- They should go in the "/WEB-INF/web.xml" file in your application.   -->
  <resource-ref>
-    <description>accountdb</description>
+    <description>mydb</description>
     <res-ref-name>jdbc/mydb</res-ref-name>
     <res-type>javax.sql.DataSource</res-type>
     <res-auth>Container</res-auth>
