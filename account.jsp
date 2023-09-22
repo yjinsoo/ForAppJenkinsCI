@@ -59,7 +59,7 @@
     </div>
     
     <%
-      String url = "jdbc:mariadb://$MYDB:3306/accountdb";
+      String url = "jdbc:mariadb://$MYDB:3306/mydb";
       String username = "root";
       String password = "dkagh1.";
       try {
