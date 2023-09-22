@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pro3-app
+spec:
+  selector:
+    matchLabels:
+      app: pro3-app
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: pro3-app
+    spec:
+      containers:
+      - name: pro3-app
+        image: jinsu0625/pro3-tomcat:dragon
+        ports:
+        - containerPort: 8080
+        env:
+          - name: MYDB
+            value: pro3-db-service
