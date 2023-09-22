@@ -44,7 +44,7 @@
               driverClassName="org.mariadb.jdbc.Driver" 
               username="root"
               password="dkagh1."
-              url="jdbc:mysql://$MYDB:3306/accountdb?serverTimezone=UTC"
+              url="jdbc:mysql://$MYDB:3306/mydb?serverTimezone=UTC"
               maxWait="5000"/>
 
     <Resource name="UserDatabase" auth="Container"
