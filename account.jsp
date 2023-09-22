@@ -67,7 +67,7 @@
         Connection conn = DriverManager.getConnection(url, username, password);
 	// if(conn != null)
 	//	out.println("disConnected");
-        String sql = "SELECT * FROM users";
+        // String sql = "SELECT * FROM users";
         PreparedStatement stmt = conn.prepareStatement(sql);
 	ResultSet rs = stmt.executeQuery();
 	while(rs.next()){
