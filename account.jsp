@@ -58,28 +58,7 @@
         </form>
     </div>
     
-    <%
-      String url = "jdbc:mariadb://$MYDB:3306/mydb";
-      String username = "root";
-      String password = "dkagh1.";
-      try {
-        Class.forName("org.mariadb.jdbc.Driver");
-        Connection conn = DriverManager.getConnection(url, username, password);
-	// if(conn != null)
-	//	out.println("disConnected");
-        // String sql = "SELECT * FROM users";
-        PreparedStatement stmt = conn.prepareStatement(sql);
-	ResultSet rs = stmt.executeQuery();
-	while(rs.next()){
-	out.println(rs.getString(1)); //rs.getSrting(1):1열
-	}
-	} catch(ClassNotFoundException e){
-		out.println("Not Connected");
-	}catch (Exception e) {
-            // 연결 또는 작업 중 예외 발생 시 처리
-             e.printStackTrace(); 
-        } 
-        %>
+    
 </body>
 </html>
 
