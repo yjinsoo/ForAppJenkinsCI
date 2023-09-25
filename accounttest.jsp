@@ -36,7 +36,7 @@ conn.close();
 %>
 
 <script>
-alert("저장 성공!");
+alert("Welcome!");
 location.href = 'index.html';
 </script>
 </html>
