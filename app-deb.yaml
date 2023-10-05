@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: pro3-app
-        image: jinsu0625/pro3-tomcat:dragon
+        image: 784695908961.dkr.ecr.us-west-2.amazonaws.com/tomcat:dragon
         ports:
         - containerPort: 8080
         env:
