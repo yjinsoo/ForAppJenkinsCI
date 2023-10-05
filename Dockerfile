@@ -1,4 +1,4 @@
-FROM tomcat:latest
+FROM 784695908961.dkr.ecr.us-west-2.amazonaws.com/tomcat:latest
 
 ENV MYDB 10.38.0.186
 RUN apt-get -y update && apt-get -y install gettext-base
