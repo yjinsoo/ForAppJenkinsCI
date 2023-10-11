@@ -13,7 +13,7 @@
     String service = request.getParameter("service");
     
     // JDBC 참조 변수 준비
-    String url = "jdbc:mariadb:$MYDB:3306/mydb";
+    String url = "jdbc:mariadb://$MYDB:3306/mydb";
     String username = "root";
     String password1 = "dkagh1.";
     // 1) JDBC 드라이버 로딩
@@ -28,7 +28,7 @@
     pstmt.setString(2, upper);
     pstmt.setString(3, pants);
     pstmt.setString(4, shoes);
-    pstmt.setString(4, service);
+    pstmt.setString(5, service);
     
     // 4) 실행
     pstmt.executeUpdate();
@@ -43,4 +43,3 @@
     location.href = 'index.html';
     </script>
     </html>
-    
