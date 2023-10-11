@@ -8,6 +8,7 @@ RUN rm -rf /usr/local/tomcat/conf/server.xml && rm -rf /usr/local/tomcat/conf/we
 COPY server.xml /
 COPY account.jsp /
 COPY accounttest.jsp /
+COPY surveytest.jsp /
 COPY web.xml /usr/local/tomcat/conf/
 COPY tomcatinit.sh /tomcatinit.sh
 RUN chmod +x /tomcatinit.sh
