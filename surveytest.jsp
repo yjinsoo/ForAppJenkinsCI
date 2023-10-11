@@ -13,7 +13,7 @@
     String service = request.getParameter("service");
     
     // JDBC 참조 변수 준비
-    String url = "jdbc:mariadb:localhost:3306/mydb";
+    String url = "jdbc:mariadb:$MYDB:3306/mydb";
     String username = "root";
     String password1 = "dkagh1.";
     // 1) JDBC 드라이버 로딩
