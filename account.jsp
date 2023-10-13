@@ -8,7 +8,7 @@
     <title>Make account</title>
     <script type="text/javascript">
 
-        // 취소 버튼 클릭시 메인 화면으로 이동 v4
+        // 취소 버튼 클릭시 메인 화면으로 이동 v1
         function goMainForm() {
             location.href="index.html";
         }
